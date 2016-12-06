@@ -3,38 +3,45 @@
 <head>
     <title>James' Blog</title>
     <meta charset="UTF-8">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="styles/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
   <div class="container">
-    <header>
-      <h1>James' Blog</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div id="left">
-        <p id="page-description">Welcome to my Blog. Here you will find several articles produced by your very own.</br></br>To get started, click any of the posts below.</p>
-        <ul>
-          <li><h3>Latest Blogs:</h2></li>
-          <li><a href="blog/c1-reflection-blog.html">Reflection</a></li>
-          <li><a href="blog/c1-time-and-habits-blog.html">Time and Habits</a></li>
-        </ul>
+    <div class="page-header">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 id="pageTitle">James' Blog</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive img-rounded" id="profilePic" src="https://james-mead.github.io/img/profilePic_Medium.png"/>
+        </div>
       </div>
-    </section>
-    <section>
-      <div id="right">
-        <img id="homePagePic" src="https://james-mead.github.io/img/profilePic_Medium.png"/>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <section>
+          <div id="main">
+            <p id="page-description">Welcome to my Blog. Here you will find several articles produced by your very own.</br></br>To get started, click any of the posts below.</p>
+            <ul>
+              <li><h3>Latest Blogs:</h2></li>
+              <li><a href="blog/c1-reflection-blog.html">Reflection</a></li>
+              <li><a href="blog/c1-time-and-habits-blog.html">Time and Habits</a></li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
+
   </div>
 </body>
 </html>
