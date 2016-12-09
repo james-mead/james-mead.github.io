@@ -268,6 +268,28 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  -webkit-animation: flash 1s;
+  animation: flash 1s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /* Medium screens */
 @media all and (max-width: 800px) {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
