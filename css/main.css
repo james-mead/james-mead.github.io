@@ -265,6 +265,7 @@ nav ul li a {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 /* Medium screens */
