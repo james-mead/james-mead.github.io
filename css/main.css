@@ -240,19 +240,7 @@ Media Queries
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-  #header-picture {
-    display: inherit;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 100px;
-    border-radius: 5px;
-  }
-
+@media (min-width: 550px) {
   #menu-icon {
     display: none;
   }
@@ -277,13 +265,22 @@ Media Queries
     padding: 10px;
     /*text-align: center;*/
   }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  #header-picture {
+    display: inherit;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    border-radius: 5px;
+  }
 
   column, .columns {
     text-align: left;
   }
-  /*h2, h3 {
-    text-align: left;
-  }*/
 }
 
 /* Larger than desktop */
