@@ -48,19 +48,9 @@ h1, h2, #page-description {
   letter-spacing: .2rem;
 }
 
-
-
-ol li {
-  text-align: left;
-}
-
 h3 {
   text-decoration: underline;
   font-size: 2rem;
-}
-
-p, .main-content ul {
-  text-align: left;
 }
 
 #page-title {
@@ -95,18 +85,6 @@ p, .main-content ul {
   font-family: "Lato";
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
 /*-------------------
   Images
 --------------------*/
@@ -129,20 +107,44 @@ p, .main-content ul {
   box-shadow: none;
 }
 
-/*------------------
- Sections
- -------------------*/
+/*-------------------
+Alignment
+---------------------*/
 
- column, .columns {
-   text-align: center;
- }
-
-.main-content .row, header .row, .cover-image .row {
-  background-color: white;
+column, .columns {
+  text-align: center;
 }
 
 .main-content {
   min-height: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+ol li {
+  text-align: left;
+}
+
+/*------------------
+ Sections
+ -------------------*/
+
+.main-content .row, .cover-image .row {
+  background-color: white;
+}
+
+header .row {
+  background-color: #d7e2ea;
 }
 
 .section-heading,
