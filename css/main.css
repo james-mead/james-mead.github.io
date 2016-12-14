@@ -1,0 +1,291 @@
+/*----------------------------------
+  Global Formatting
+----------------------------------*/
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  /*border: .5px solid green;*/
+}
+
+/*----------------------------------
+  General Formatting
+----------------------------------*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background-color: #d6d6d6;
+}
+
+.main-content .row {
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+
+/*------------------
+Typography
+---------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  padding: 1rem 0;
+}
+
+h1, h2, #page-description {
+  letter-spacing: .2rem;
+}
+
+
+
+ol li {
+  text-align: left;
+}
+
+h3 {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+p, .main-content ul {
+  text-align: left;
+}
+
+#page-title {
+  margin-top: 50px;
+}
+
+#page-description {
+  color: #905050;
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-top: -30px;
+}
+
+.text-muted {
+  color: #BCBBBB;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.title-super {
+  font-size: 6rem;
+  font-family: "Lato";
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*-------------------
+  Images
+--------------------*/
+
+.blog-pics {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px lightgray;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+#header-picture {
+  display: none;
+}
+
+.u-no-boxshadow {
+  box-shadow: none;
+}
+
+/*------------------
+ Sections
+ -------------------*/
+
+ column, .columns {
+   text-align: center;
+ }
+
+.main-content .row, header .row, .cover-image .row {
+  background-color: white;
+}
+
+.main-content {
+  min-height: 100%;
+}
+
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/*--------------------------
+  Navigation
+--------------------------*/
+
+#menu-icon {
+  width: 40px;
+  height: 40px;
+  background: black url("../img/menu-icon.png") center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+}
+
+nav ul, nav:active ul {
+  background: black;
+  border-radius: 4px 0 4px 4px;
+  border: 5px solid black;
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  margin-bottom: 0;
+  right: 10px;
+  top: 60px;
+  width: 50%;
+  z-index: 100;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 20px 0;
+}
+
+nav:hover ul {
+  display: block;
+}
+
+nav ul li a{
+  color: gray;
+  padding: .6rem;
+  font-size: 2rem;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/*----------------------------------
+  Main-footer
+----------------------------------*/
+
+footer {
+  background-color: #333;
+  bottom: 0;
+  padding: 40px 0 20px 0;
+  position: relative;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px 15px;
+}
+
+/*-----------------------
+Media Queries
+------------------------*/
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  #header-picture {
+    display: inherit;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  #page-title {
+    margin-top: -5px;
+  }
+
+  #page-title, #page-description {
+    text-align: right;
+  }
+
+  nav ul, nav:active ul, nav:hover ul{
+  display: inline-flex;
+  justify-content: flex-end;
+  position: inherit;
+  width: 100%;
+  padding: 0;
+  }
+
+  nav ul li {
+    padding: 10px;
+    /*text-align: center;*/
+  }
+
+  column, .columns {
+    text-align: left;
+  }
+  /*h2, h3 {
+    text-align: left;
+  }*/
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

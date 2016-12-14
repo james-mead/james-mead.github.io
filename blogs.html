@@ -1,40 +1,52 @@
-<!doctype html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>James Mead - Blogs</title>
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Oswald:300,400|Roboto:300,400" rel="stylesheet">
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>James Mead - Blogs</title>
+<meta name="description" content="">
+<meta name="author" content="James Mead">
 
-        <!-- Add your site or application content here -->
-        <section class="grid">
-          <header>
-            <div class="row" id="page-header">
-      				<div class="col-2">
-      					<img id="profilePic" src="img/profilePic-1.jpg" alt="Profile Picture" />
-      				</div>
-      				<div class="col-10">
-      					<h1 class="text-thin title-super text-uppercase page-title">James Mead</h1>
-      					<h4 class="page-description">Aspiring Web Developer</h4>
-      				</div>
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Oswald:300,400|Roboto:300,400" rel="stylesheet">
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <link rel="icon" type="image/png" href="../../dist/images/favicon.png"> -->
+
+</head>
+  <body>
+    <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header>
+          <div class="container main-header">
+            <div class="row">
+              <div class="twelve columns">
+                <img id="header-picture" src="img/profilePic-1.jpg" alt="Profile Picture" />
+                <h1 class="text-thin title-super text-uppercase" id="page-title">James Mead</h1>
+                <h4 id="page-description">Aspiring Web Developer</h4>
+              </div>
             </div>
-      			<div class="row">
-      				<div class="col-12">
+            <div class="row">
+              <div class="twelve columns">
                 <nav class="text-uppercase">
+                <a href="#" id="menu-icon"></a>
                   <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
@@ -42,55 +54,51 @@
                     <li><a href="#">About</a></li>
                   </ul>
                 </nav>
-      					<hr />
-      				</div>
-      			</div>
-          </header>
-
-          <div class="main-content">
-            <div class="row">
-              <div class="col-12">
-                <img class="coverImage" src="img/coverImage2.jpeg" alt="Laptop and Coffee" />
                 <hr />
               </div>
             </div>
-            <article class="row">
-              <div class="col-12">
+          </div>
+        </header>
+        <section class="cover-image">
+          <div class="container">
+            <div class="row">
+              <div class="twelve columns">
+                  <img class="coverImage u-max-full-width" src="img/coverImage2.jpeg" alt="laptop and Coffee" />
+                  <hr />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="tweleve columns">
                 <header>
                   <h2 class="text-muted">Blogs</h2>
                 </header>
+                <article>
                   <h3><a href="blog/c1-reflection-blog.html">Reflection</a></h3>
                   <h3><a href="blog/c1-time-and-habits-blog.html">Time and Habits</a></h3>
                   <h3><a href="blog/t2-html-css-dom-p1.html">Technical Blog Part 1</a></h3>
                   <h3><a href="blog/t2-html-css-dom-p2.html">Technical Blog Part 2</a></h3>
                   <h3><a href="blog/c2-emotional-intelligence.html">Emotional Intelligence</a></h3><h3><a href="blog/t3-design-to-web-blog.html">Responsive Web Design</a></h3>
+                </article>
               </div>
-            </article>
+            </div>
           </div>
-            <footer>
-              <div class="row">
-                <div class="col-12">
-                  <p>
-                    &copy; Copyright James Mead
-                  </p>
-                </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="twelve columns">
+                <p>
+                  &copy; Copyright James Mead
+                </p>
               </div>
-            </footer>
-    		</section>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+            </div>
+          </div>
+        </footer>
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
 </html>
