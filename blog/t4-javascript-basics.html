@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>James Mead - Javascript Basics</title>
+<meta name="description" content="">
+<meta name="author" content="James Mead">
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Oswald:300,400|Roboto:300,400" rel="stylesheet">
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+<link rel="stylesheet" href="../css/main.css">
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <link rel="icon" type="image/png" href="../../dist/images/favicon.png"> -->
+
+</head>
+  <body>
+    <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header>
+          <div class="container main-header">
+            <div class="row">
+              <div class="twelve columns">
+                <img id="header-picture" src="../img/profilePic-1.jpg" alt="Profile Picture" />
+                <h1 class="text-thin title-super text-uppercase" id="page-title">James Mead</h1>
+                <h4 id="page-description">Aspiring Web Developer</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                <nav class="text-uppercase">
+                <a href="#" id="menu-icon"></a>
+                  <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blogs.html">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                  </ul>
+                </nav>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="tweleve columns">
+                <header>
+                  <h2 class="text-muted">Javascipt Basics</h2>
+                  <p>
+                    This week at EDA we got to learn about Javascipt. So what is Javascript?
+                  </p>
+                </header>
+                <article>
+                  <h3 class="section-heading">Web Technologies</h3>
+                  <p>There are three main technologies to create web pages.</p>
+                  <ol>
+                    <li>
+                      <strong>HTML</strong> - Which is used for structuring content
+                    </li>
+                    <li>
+                      <strong>CSS</strong> - Which is used to style elements on a page
+                    </li>
+                    <li>
+                      <strong>Javascript</strong> - Which is used for for manipulating elements based upon <strong>events</strong>, (like clicking on something, or changing a value in a form)
+                    </li>
+                  </ol>
+                </article>
+                <article>
+                  <h3 class="section-heading">Control Flow and Loops</h3>
+                  <p>
+                    Control Flow is an important aspect of programming languages that allow your code to take certain actions based on a variety of scenarios. A great example of the use of control flow is a <strong>'while loop'</strong> statement whereby it loops through a block of code as long as a specified condition is true. </br></br>
+                    <strong>while</strong> (i < 10) { </br>
+                    text += "The number is " + i; </br>
+                    i++; </br>
+                    }
+                  </p>
+                </article>
+                <article>
+                  <h3 class="section-heading">Accessing Data from Arrays vs Objects</h3>
+                  <p>
+                    An Array is a special type of variable which can hold more than one value at a time. </br></br>
+                    <strong>var cars = ["Saab", "Volvo", "BMW"];</strong></br></br>
+                    You can refer to an element in an array by referencing its index number. </br></br>
+                    <strong>cars[0];</strong>
+                    <i>// returns the first element in the array, or 'Saab'</i>
+                  </p>
+                  <p>
+                    Objects can be compared to objects in real life and contain various properties which help describe it. If we are to use the real life object of a car, we know it has several properties such as make, model, year and colour.</br></br>
+                    <strong>var car = {make:"Fiat", model:"500", year:"1990", color:"white"}; </strong></br></br>
+                    You can access object properties in two ways:</br> <strong>objectName.propertyName</strong> or <strong>objectName["propertyName"]</strong>
+                  </p>
+                </article>
+                <article>
+                  <h3 class="section-heading">Functions</h3>
+                  <p>
+                    A Function is a block of code designed to perform a particular task and is executed once it has been called or invoked. There are several benefits of using Functions within software development, such as the ability to call a Function multiple times which avoids code duplication and minimizes errors.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="twelve columns">
+                <p>
+                  &copy; Copyright James Mead
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
