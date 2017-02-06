@@ -4,7 +4,7 @@
     <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta charset="utf-8">
-<title>James Mead - Blogs</title>
+<title>James Mead - What is Scope?</title>
 <meta name="description" content="">
 <meta name="author" content="James Mead">
 
@@ -20,7 +20,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="../css/main.css">
 
 <!-- Scripts
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,7 +38,7 @@
           <div class="container main-header">
             <div class="row">
               <div class="twelve columns">
-                <img id="header-picture" src="img/profilePic-1.jpg" alt="Profile Picture" />
+                <img id="header-picture" src="../img/profilePic-1.jpg" alt="Profile Picture" />
                 <h1 class="text-thin title-super text-uppercase" id="page-title">James Mead</h1>
                 <h4 id="page-description">Aspiring Web Developer</h4>
               </div>
@@ -48,8 +48,8 @@
                 <nav class="text-uppercase">
                 <a href="#" id="menu-icon"></a>
                   <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blogs.html">Blogs</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
                   </ul>
@@ -59,38 +59,29 @@
             </div>
           </div>
         </header>
-        <section class="cover-image">
-          <div class="container">
-            <div class="row">
-              <div class="twelve columns">
-                  <img class="coverImage u-max-full-width" src="img/coverImage2.jpeg" alt="laptop and Coffee" />
-                  <hr />
-              </div>
-            </div>
-          </div>
-        </section>
         <section class="main-content">
           <div class="container">
             <div class="row">
               <div class="tweleve columns">
                 <header>
-                  <h2 class="text-muted">Blogs</h2>
+                  <h2 class="text-muted">What is Scope?</h2>
                 </header>
                 <article>
-                  <h3><a href="blog/c1-reflection-blog.html">Reflection</a></h3>
-                  <h3><a href="blog/c1-time-and-habits-blog.html">Time and Habits</a></h3>
-                  <h3><a href="blog/t2-html-css-dom-p1.html">Technical Blog Part 1</a></h3>
-                  <h3><a href="blog/t2-html-css-dom-p2.html">Technical Blog Part 2</a></h3>
-                  <h3><a href="blog/c2-emotional-intelligence.html">Emotional Intelligence</a></h3><h3><a href="blog/t3-design-to-web-blog.html">Responsive Web Design</a></h3>
-                  <h3><a href="blog/c3-meditation-process.html">Meditation Process</a></h3>
-                  <h3><a href="blog/t4-javascript-basics.html">Javascript Basics</a></h3>
-                  <h3><a href="blog/c4-daily-mindfulness.html">Daily Mindfulness</a></h3>
-                  <h3><a href="blog/t5-problem-solving.html">Problem Solving</a></h3>
-                  <h3><a href="blog/c5-self-confidence.html">Self Confidence</a></h3>
-                  <h3><a href="blog/t6-js-language.html">Javascript Language</a></h3>
-                  <h3><a href="blog/c6-controls.html">Self-Regulation</a></h3>
-                  <h3><a href="blog/c7-motivation.html">Motivation</a></h3>
-                  <h3><a href="blog/t6-scope.html">What is Scope?</a></h3>
+                  <h3 class="section-heading">How Scope Works in Javascript</h3>
+                  <p>In Javascript, scope refers to where variables and functions are accessible, and in what context they are being executed. Code can be defined as having either a <strong>global</strong> scope or a <strong>local</strong> scope.</p>
+                  <p>
+                    Global scope is the highest level of scope and is the default scope or namespace when beginning to write a new Javascript document. There can only be one Global scope and within it, variables and functions are accessible to an entire document. For example: </br></br>
+                    // global scope - accessible to the entire document</br>
+                    <code>var firstName = "James";</code>
+                  </p>
+                  <p>
+                    Local Scope refers to code that is defined and accessbile from within certain parts of your document, like a function. In the example below, the variable <i>lastName</i> has a local scope and isn't exposed to the parent scope, therefore it is undefined. For example:</br><br />
+                    // code within the block statement is limited to a local scope
+                    <code>function name () { </br>
+                      var firstName = "James"; </br>
+                      var lastName = "Mead"; </br>
+                    }</code>
+                  </p>
                 </article>
               </div>
             </div>
