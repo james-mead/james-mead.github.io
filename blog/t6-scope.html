@@ -70,12 +70,12 @@
                   <h3 class="section-heading">How Scope Works in Javascript</h3>
                   <p>In Javascript, scope refers to where variables and functions are accessible, and in what context they are being executed. Code can be defined as having either a <strong>global</strong> scope or a <strong>local</strong> scope.</p>
                   <p>
-                    Global scope is the highest level of scope and is the default scope or namespace when beginning to write a new Javascript document. There can only be one Global scope and within it, variables and functions are accessible to an entire document. For example: </br></br>
+                    <strong>Global</strong> scope is the highest level of scope and is the default scope or namespace when writing a new Javascript document. There can only be one Global scope and within it, variables and functions are accessible to an entire document. For example: </br></br>
                     // global scope - accessible to the entire document</br>
                     <code>var firstName = "James";</code>
                   </p>
                   <p>
-                    Local Scope refers to code that is defined and accessbile from within certain parts of your document, like a function. In the example below, the variable <i>lastName</i> has a local scope and isn't exposed to the parent scope, therefore it is undefined. For example:</br><br />
+                    <strong>Local</strong> Scope refers to code that is defined and accessbile from within certain parts of your document. Local scopes are created within functions. Any code that is written within a function's block statement is limited to a local scope. For example:</br><br />
                     // code within the block statement is limited to a local scope
                     <code>function name () { </br>
                       var firstName = "James"; </br>
